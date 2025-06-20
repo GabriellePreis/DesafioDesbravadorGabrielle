@@ -12,13 +12,11 @@ describe('Realizar Reserva', () => {
         cy.visit('https://reservas.desbravador.com.br/hotel-app/hotel-teste-desbravador-8050')
         cy.wait(10000);
 
-        //Etapa 2: selecionar intervalo de datas
-        cy.get('input[type="text"]').first().click();
-
+        //Etapa 2: Selecionar período 
        // Aguarda o calendário aparecer
        cy.get('.calendar, .month2').should('be.visible');
 
-       // Seleciona a data de início: 16/07/2025
+       //Seleciona a data de início: 16/07/2025
        cy.get('.month2 > tbody > :nth-child(3) > :nth-child(4) > .day > div')
       .click({ force: true });
 
@@ -26,7 +24,7 @@ describe('Realizar Reserva', () => {
        cy.get('.month2 > tbody > :nth-child(3) > :nth-child(7) > .day > div')
       .click({ force: true });
 
-       // Valida dias selecionados
+       //Valida dias selecionados
        cy.get('.day.checked').should('have.length', 4);
 
        //Etapa 3: Adicionar 2 adultos e 1 criança
@@ -104,7 +102,7 @@ describe('Realizar Reserva', () => {
     
     context('Detalhes da reserva', () => {
 
-        //Cenário 3
+        //Cenário 4
         it('Adicionar nome dos hóspedes', () => {
         
     });
@@ -112,7 +110,7 @@ describe('Realizar Reserva', () => {
     
     context('Pagamento', () => {
 
-    //Cenário 4
+    //Cenário 5
     it('Efetuar Pagamento', () => {
 
         
