@@ -6,7 +6,7 @@ describe('Realizar Reserva', () => {
     context('Disponibilidade de Quartos', () => {
 
         //Cenário 1
-        it.only('Consultar disponibilidade de reserva sem marcar reCaptcha', () => {
+        it('Consultar disponibilidade de reserva sem marcar reCaptcha', () => {
 
         //Etapa 1: acessar site
         cy.visit('https://reservas.desbravador.com.br/hotel-app/hotel-teste-desbravador-8050')
