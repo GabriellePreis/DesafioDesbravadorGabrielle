@@ -1,3 +1,4 @@
+Oláa! 
 Neste código, utilizei o Cypress para automatizar os seguintes passos:
 - Acessar o endereço da página de reservas;
 - Selecionar período de dias;
