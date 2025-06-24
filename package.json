@@ -1,0 +1,9 @@
+{
+  "name": "Desafio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^14.5.0"
+  }
+}
